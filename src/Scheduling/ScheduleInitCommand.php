@@ -11,12 +11,12 @@ class ScheduleInitCommand extends Command
     /**
      * @var string
      */
-    protected $name = 'schedule:init';
+    protected string $name = 'schedule:init';
 
     /**
      * @var string
      */
-    protected $description = 'schedule project init';
+    protected string $description = 'schedule project init';
 
     /**
      * @return void
