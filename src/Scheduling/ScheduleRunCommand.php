@@ -13,13 +13,13 @@ class ScheduleRunCommand extends Command
     /**
      * @var string
      */
-    protected $signature = 'schedule:run
+    protected string $signature = 'schedule:run
                             {--pool=1 : schedule run for pool process}
                             {--size=5 : The number of events to process running}';
     /**
      * @var string
      */
-    protected $description = 'Run the scheduled commands';
+    protected string $description = 'Run the scheduled commands';
     /**
      * @var Process
      */
