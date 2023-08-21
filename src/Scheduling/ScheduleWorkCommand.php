@@ -15,11 +15,11 @@ class ScheduleWorkCommand extends Command
     /**
      * @var string
      */
-    protected $name = 'schedule:work';
+    protected string $name = 'schedule:work';
     /**
      * @var string
      */
-    protected $description = 'Start the schedule worker';
+    protected string $description = 'Start the schedule worker';
 
 
     /**
