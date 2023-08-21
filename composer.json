@@ -1,5 +1,5 @@
 {
-  "name": "pkg6/console",
+  "name": "yzh52521/console",
   "type": "library",
   "license": "Apache-2.0",
   "description": "A PHP console application",
@@ -12,8 +12,8 @@
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
-    "symfony/console": "^5.4",
-    "symfony/process": "^5.4",
+    "symfony/console": "^5.4|^6.0",
+    "symfony/process": "^5.4|^6.0",
     "dragonmantank/cron-expression": "^3.3"
   },
   "autoload": {
