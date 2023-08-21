@@ -38,7 +38,7 @@ abstract class Command extends SymfonyCommand
      * The console command help text.
      * @var string
      */
-    protected string $help;
+    protected string $help='';
 
     /**
      * @var int
@@ -69,8 +69,8 @@ abstract class Command extends SymfonyCommand
         } else {
             parent::__construct($this->name);
         }
-        $this->setDescription((string)$this->description);
-        $this->setHelp((string)$this->help);
+        $this->setDescription($this->description);
+        $this->setHelp($this->help);
         $this->setHidden($this->isHidden());
         if (!isset($this->signature)) {
             $this->specifyParameters();
@@ -113,7 +113,7 @@ abstract class Command extends SymfonyCommand
     /**
      * @return string
      */
-    public function getDescription()
+    public function getDescription():string
     {
         return $this->description;
     }
@@ -121,7 +121,7 @@ abstract class Command extends SymfonyCommand
     /**
      * @return string
      */
-    public function getHelp()
+    public function getHelp():string
     {
         return $this->help;
     }
