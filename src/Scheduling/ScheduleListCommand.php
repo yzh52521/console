@@ -11,11 +11,11 @@ class ScheduleListCommand extends Command
     /**
      * @var string
      */
-    protected $name = 'schedule:list';
+    protected string  $name = 'schedule:list';
     /**
      * @var string
      */
-    protected $description = 'List the scheduled commands';
+    protected string $description = 'List the scheduled commands';
 
     /**
      * @return void
