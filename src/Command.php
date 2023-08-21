@@ -20,25 +20,25 @@ abstract class Command extends SymfonyCommand
      * The console command name.
      * @var string
      */
-    protected $name;
+    protected string $name;
 
     /**
      * The name and signature of the console command.
      * @var string
      */
-    protected $signature;
+    protected string $signature;
 
     /**
      * The console command description.
      * @var string
      */
-    protected $description;
+    protected string $description;
 
     /**
      * The console command help text.
      * @var string
      */
-    protected $help;
+    protected string $help;
 
     /**
      * @var int
@@ -133,7 +133,7 @@ abstract class Command extends SymfonyCommand
      * @throws \Exception
      * @throws ExceptionInterface
      */
-    public function run(InputInterface $input, OutputInterface $output)
+    public function run(InputInterface $input, OutputInterface $output):int
     {
         $this->output = new SymfonyStyle($input, $output);
         return parent::run($this->input = $input, $this->output);
